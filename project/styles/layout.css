@@ -8,7 +8,6 @@ aside {
     max-width: 50vw;
 }
 .aside_triangle__top {
-    top: -100vh;
     width: 0;
     height: 0;
     border-style: solid;
@@ -17,7 +16,7 @@ aside {
 }
 .aside_triangle__bottom {
     position: absolute;
-    top: 100vh;
+    top: 0;
     width: 0;
     height: 0;
     border-style: solid;

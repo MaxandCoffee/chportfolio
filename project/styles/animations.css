@@ -1,11 +1,13 @@
 
 .aside_triangle__top {
+    transform: translate(0, -100vh);
     animation-name: fly_from_top;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 
 .aside_triangle__bottom {
+    transform: translate(0, -100vh);
     animation-name: fly_from_bottom;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -31,14 +33,14 @@ h1.main_heading {
 
 /* Standard syntax */
 @keyframes fly_from_bottom {
-  from {top: 100vh;}
-  to {top: 0;}
+    from {transform: translate(0, 100vh);}
+  to {transform: translate(0, 0);}
 }
 
 /* Standard syntax */
 @keyframes fly_from_top {
-  from {top: -100vh;}
-  to {top: 0;}
+  from {transform: translate(0, -100vh);}
+  to {transform: translate(0, 0);}
 }
 
 /* Standard syntax */
