@@ -5,6 +5,7 @@
     display: inline-block;
     letter-spacing: 1px;
     vertical-align: middle;
+    margin: 0 0 0 10px;
 }
 
 a[href='#kcManager'] + .colorDot{
