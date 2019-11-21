@@ -64,6 +64,13 @@ body.projects h1{
     animation-delay: .5s;
 }
 
+.flyin_right {
+  animation-name: flyin_right;
+  animation-duration: .75s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
 
 @keyframes right_to_left {
   from {right: -100vw;}
@@ -100,4 +107,13 @@ body.projects h1{
   50% {opacity: 0;}
   75% {opacity: 0;}
   100% {opacity: 1;}
+}
+
+@keyframes flyin_right {
+  0% {
+    display: block;
+    right: -100%;
+  }
+  50% {opacity: 20%;}
+  100% {right: 0;}
 }
