@@ -27,7 +27,7 @@ button::after{
     width: 240px;
     height: 45px;
     background: #2FB5A8;
-    transition: all .25s linear 1s;
+    transition: all .25s linear;
 }
 button:hover::after{
     width: 0;
