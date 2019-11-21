@@ -2,9 +2,10 @@
     height: 26px;
     width: 26px;
     border-radius: 50%;
+    display: inline-block;
 }
 
-a[href=#kcManager] + .colorDot{
+a[href='#kcManager'] + .colorDot{
     background: violet;
 }
 
