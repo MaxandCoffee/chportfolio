@@ -41,7 +41,7 @@ function initProjects() {
 
 function init() {
     switch (window.location.hash) {
-        case 'project':
+        case '#projects':
             initProjects();
           break;
     }
