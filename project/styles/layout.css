@@ -5,6 +5,7 @@
 }
 aside{
     position: relative;
+    max-width: 50vw;
 }
 .aside_triangle__top{
     position: absolute;
