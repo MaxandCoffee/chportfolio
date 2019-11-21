@@ -29,17 +29,17 @@ body.projects .overlay {
 
 body.projects .aside_triangle__top {
     transition-property: border-color;
-    transition-duration: 1s;
+    transition-duration: .75s;
     transition-timing-function: linear;
     transition-delay: .75s;
     border-color: #2FB5A8 transparent transparent transparent;
 }
 body.projects .aside_triangle__bottom {
     transition-property: border-color;
-    transition-duration: .75s;
+    transition-duration: .5s;
     transition-timing-function: linear;
     transition-delay: .75s;
-    border-color: transparent transparent transparent #dodgerblue;
+    border-color: transparent transparent transparent dodgerblue;
 }
 
 
