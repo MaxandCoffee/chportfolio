@@ -33,26 +33,26 @@ section#projects li a{
     text-decoration: none;
     color: black;
 }
-a[href='#kcManager']:hover{
+section#projects li a[href='#kcManager']:hover{
     color: violet;
 }
 
-a[href='#viewDoLabs']:hover{
+section#projects li a[href='#viewDoLabs']:hover{
     color: orange;
 }
 
-a[href='#beaconInteractiveSys']:hover{
+section#projects li a[href='#beaconInteractiveSys']:hover{
     color: hotpink;
 }
 
-a[href='#vistaprintCS']:hover{
+section#projects li a[href='#vistaprintCS']:hover{
     color: lightseagreen;
 }
 
-a[href='#adventInternat']:hover{
+section#projects li a[href='#adventInternat']:hover{
     color: indigo;
 }
 
-a[href='#vistaprint']:hover{
+section#projects li a[href='#vistaprint']:hover{
     color: purple;
 }
