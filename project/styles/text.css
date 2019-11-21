@@ -33,3 +33,26 @@ section#projects li a{
     text-decoration: none;
     color: black;
 }
+a[href='#kcManager']:hover{
+    background: violet;
+}
+
+a[href='#viewDoLabs']:hover{
+    background: orange;
+}
+
+a[href='#beaconInteractiveSys']:hover{
+    background: hotpink;
+}
+
+a[href='#vistaprintCS']:hover{
+    background: lightseagreen;
+}
+
+a[href='#adventInternat']:hover{
+    background: indigo;
+}
+
+a[href='#vistaprint']:hover{
+    background: purple;
+}
