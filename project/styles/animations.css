@@ -61,7 +61,7 @@ body.projects .aside_triangle__bottom {
     transition-timing-function: linear;
     transition-delay: 1s;
     animation-name: fade_out_then_in;
-    animation-duration: .5s;
+    animation-duration: 2.5s;
     animation-fill-mode: forwards;
     animation-delay: .5s;
 }
