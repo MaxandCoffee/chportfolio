@@ -51,20 +51,20 @@ body.projects .aside_triangle__bottom {
 }
 
 #home_link.to_top{
-    animation-name: fade_out;
-    animation-duration: .25s;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    letter-spacing: 2px;
+    transform: translate(20px, 15px);
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+    animation-name: fade_out_then_in;
+    animation-duration: .5s;
     animation-fill-mode: forwards;
     animation-delay: .5s;
 }
-
-
-/* h1.main_heading {
-    opacity: 0;
-    animation-name: fade_in;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
-    animation-delay: 1s;
-} */
 
 
 @keyframes right_to_left {
@@ -94,4 +94,10 @@ body.projects .aside_triangle__bottom {
       opacity: 0;
       display: none;
     }
+}
+
+@keyframes fade_out_then_in {
+  0% {opacity: 1;}
+  50% {opacity: 0;}
+  1000% {opacity: 1;}
 }
