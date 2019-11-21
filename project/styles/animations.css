@@ -34,7 +34,7 @@ body.projects .aside_triangle__top {
     transition-delay: .75s;
     border-color: #2FB5A8 transparent transparent transparent;
 }
-body.projects  .aside_triangle__bottom {
+body.projects .aside_triangle__bottom {
     transition-property: border-color;
     transition-duration: .75s;
     transition-timing-function: linear;
@@ -54,7 +54,7 @@ body.projects  .aside_triangle__bottom {
 /* Standard syntax */
 @keyframes right_to_left {
   from {right: -100vw;}
-  to {left: -100vw;}
+  to {right: 100vw;}
 }
 
 /* Standard syntax */
