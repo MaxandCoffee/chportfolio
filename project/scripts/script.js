@@ -17,8 +17,10 @@ function initProjects() {
     about_me.classList.add('fadeout');
     setTimeout(function () {
         main_heading.innerHTML = 'My Projects';
-        about_me.style.display = "none";
     }, 1750);
+    setTimeout(function () {
+        about_me.style.display = "none";
+    }, 500);
     projects.style.display = "inline-block";
     projects.classList.add('flyin_right');
 
