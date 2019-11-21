@@ -11,15 +11,20 @@ h1 {
     left: 26.5%;
     letter-spacing: 8px;
 }
-
 p {
     margin: 0 0 25px;
     font-size: 20px;
     font-family: Tahoma, Geneva, sans-serif;
     line-height: 1.5;
 }
-
 .hello {
     color: dodgerblue;
     font-size: 25px;
+}
+section#projects li {
+    font-family: Impact, Charcoal, sans-serif;
+    padding: 3vh;
+    font-size: 26px;
+    list-style: none;
+    text-align: left;
 }

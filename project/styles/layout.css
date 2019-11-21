@@ -65,7 +65,8 @@ nav #home_link{
     letter-spacing: 2px;
     transform: translate(20px, 15px);
 }
-section#projects {
+section#projects li {
+    position: relative;
     right: -100%;
     display: none;
 }

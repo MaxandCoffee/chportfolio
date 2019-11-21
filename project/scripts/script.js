@@ -22,10 +22,10 @@ function initProjects() {
     setTimeout(function () {
         about_me.style.display = "none";
     }, 500);
-    projects.style.display = "inline-block";
 
     for (let i in project_li) {
         setTimeout(function () {
+            project_li[i].style.display = "inline-block";
             project_li[i].classList.add('flyin_right');
         }, 250);
     }
