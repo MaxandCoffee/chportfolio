@@ -1,4 +1,4 @@
-button{
+#projectsButton{
     display: inline-block;
     background: dodgerblue;
     width: 240px;
@@ -11,7 +11,7 @@ button{
     position: relative;
     cursor: pointer;
 }
-button span{
+#projectsButton span{
     position: absolute;
     top: 0;
     left: 0;
@@ -20,7 +20,7 @@ button span{
     z-index: 1;
     line-height: 45px;
 }
-button::after{
+#projectsButton::after{
     content: '';
     position: absolute;
     top: 0;
@@ -30,6 +30,6 @@ button::after{
     background: #2FB5A8;
     transition: all .25s linear;
 }
-button:hover::after{
+#projectsButton:hover::after{
     width: 0;
 }

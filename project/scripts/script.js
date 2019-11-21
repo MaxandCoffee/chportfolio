@@ -37,7 +37,14 @@ function initProjects() {
 }
 
 
+
+
 function init() {
+    switch (window.location.hash) {
+        case 'project':
+            initProjects();
+          break;
+    }
     addListeners();
 }
 

@@ -43,7 +43,7 @@ section {
 .button_wrapper {
     text-align: center;
 }
-button {
+#projectsButton {
     display: inline-block;
 }
 .overlay {
