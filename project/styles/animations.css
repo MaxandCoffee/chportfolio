@@ -21,9 +21,13 @@ section.about_me {
     animation-delay: 1s;
 }
 
+body.projects section.about_me{
+    display: none;
+}
+
 body.projects .overlay {
     animation-name: right_to_left;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
@@ -31,14 +35,14 @@ body.projects .aside_triangle__top {
     transition-property: border-color;
     transition-duration: .75s;
     transition-timing-function: linear;
-    transition-delay: .75s;
+    transition-delay: 1s;
     border-color: #2FB5A8 transparent transparent transparent;
 }
 body.projects .aside_triangle__bottom {
     transition-property: border-color;
     transition-duration: .5s;
     transition-timing-function: linear;
-    transition-delay: .75s;
+    transition-delay: 1s;
     border-color: transparent transparent transparent dodgerblue;
 }
 
