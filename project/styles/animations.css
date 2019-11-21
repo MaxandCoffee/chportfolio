@@ -22,6 +22,7 @@ section.about_me {
 }
 
 body.projects section.about_me{
+    opacity: 1;
     animation-name: fade_out;
     animation-duration: .25s;
     animation-fill-mode: forwards;
