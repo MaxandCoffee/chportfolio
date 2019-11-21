@@ -5,6 +5,8 @@
 }
 aside {
     max-width: 50vw;
+    position:relative;
+    z-index: 1
 }
 .aside_triangle__top {
     width: 0;
@@ -42,4 +44,11 @@ section {
 }
 button {
     display: inline-block;
+}
+.overlay {
+    height: 100vh;
+    width: 100vw;
+    background: blue;
+    position: absolute;
+    top: 0;
 }
