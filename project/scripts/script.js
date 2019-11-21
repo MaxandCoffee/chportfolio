@@ -19,7 +19,9 @@ function initProjects() {
         main_heading.innerHTML = 'My Projects';
         about_me.style.display = "none";
     }, 1750);
+    projects.style.display = "block";
     projects.classList.add('flyin_right');
+
 }
 
 
