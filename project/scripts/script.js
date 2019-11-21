@@ -26,11 +26,10 @@ function initProjects() {
     let timeout = 0;
 
     for (let i in project_li) {
-
+        project_li[i].style.display = "block";
         timeout += 250;
 
         setTimeout(function () {
-            project_li[i].style.display = "block";
             project_li[i].classList.add('flyin_right');
         }, timeout);
     }
