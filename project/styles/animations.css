@@ -50,16 +50,14 @@ body.projects .aside_triangle__bottom {
     border-color: transparent transparent transparent dodgerblue;
 }
 
-#home_link.to_top{
-    top: 0;
-    left: 0;
-    font-size: 20px;
-    transition-property: all;
-    transition-duration: .1s;
-    transition-timing-function: linear;
-    transition-delay: .5s;
-    letter-spacing: 2px;
-    transform: translate(20px, 15px);
+body.projects .top_nav #home_link{
+  animation-name: fade_in;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 2.5s;
+}
+
+h1{
     animation-name: fade_out_then_in;
     animation-duration: 2.5s;
     animation-fill-mode: forwards;
