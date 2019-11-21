@@ -13,9 +13,11 @@ button{
 button span{
     position: absolute;
     top: 0;
+    left: 0;
     width: 240px;
     height: 45px;
     z-index: 1;
+    line-height: 45px;
 }
 button::after{
     content: '';
@@ -25,7 +27,7 @@ button::after{
     width: 240px;
     height: 45px;
     background: #2FB5A8;
-    transition: all .5s linear 1s;
+    transition: all .25s linear 1s;
 }
 button:hover::after{
     width: 0;
