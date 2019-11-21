@@ -13,7 +13,7 @@
     animation-fill-mode: forwards;
 }
 
-.home section.about_me {
+.home #about_me {
     opacity: 0;
     animation-name: fade_in;
     animation-duration: 1s;
@@ -21,7 +21,7 @@
     animation-delay: 1s;
 }
 
-body.projects section.about_me{
+section.fadeout{
     opacity: 1;
     animation-name: fade_out;
     animation-duration: .25s;
