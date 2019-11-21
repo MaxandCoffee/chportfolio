@@ -31,13 +31,13 @@ h1.main_heading {
 
 /* Standard syntax */
 @keyframes fly_from_bottom {
-  from {top: -100vh;}
+  from {top: 100vh;}
   to {top: 0;}
 }
 
 /* Standard syntax */
 @keyframes fly_from_top {
-  from {top: 100vh;}
+  from {top: -100vh;}
   to {top: 0;}
 }
 
