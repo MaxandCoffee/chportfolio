@@ -53,9 +53,14 @@ button {
     top: 0;
     right: -100vw;
 }
-.top_nav #home_link{
+nav {
+    position: absolute;
+    z-index: 2;
+}
+nav #home_link{
     top: 0;
     left: 0;
+    opacity: 0;
     font-size: 20px;
     letter-spacing: 2px;
     transform: translate(20px, 15px);
