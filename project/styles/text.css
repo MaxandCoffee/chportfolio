@@ -1,7 +1,7 @@
 h1 {
     transform: translate(-50%, 0);
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     font-size: 60px;
     line-height: 1;
     text-transform: uppercase;
