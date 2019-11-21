@@ -21,6 +21,28 @@ section.about_me {
     animation-delay: 1s;
 }
 
+body.projects .overlay {
+    animation-name: right_to_left;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+body.projects .aside_triangle__top {
+    transition-property: border-color;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: .75s;
+    border-color: #2FB5A8 transparent transparent transparent;
+}
+body.projects  .aside_triangle__bottom {
+    transition-property: border-color;
+    transition-duration: .75s;
+    transition-timing-function: linear;
+    transition-delay: .75s;
+    border-color: transparent transparent transparent #dodgerblue;
+}
+
+
 /* h1.main_heading {
     opacity: 0;
     animation-name: fade_in;
@@ -29,11 +51,15 @@ section.about_me {
     animation-delay: 1s;
 } */
 
-
+/* Standard syntax */
+@keyframes right_to_left {
+  from {right: -100vw;}
+  to {left: -100vw;}
+}
 
 /* Standard syntax */
 @keyframes fly_from_bottom {
-    from {transform: translate(0, 100vh);}
+  from {transform: translate(0, 100vh);}
   to {transform: translate(0, 0);}
 }
 
