@@ -12,15 +12,17 @@
 }
 
 section.about_me {
+    opacity: 0;
     animation-name: fade_in;
-    animation-duration: .5s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-delay: .25s;
 }
 
 h1.main_heading {
+    opacity: 0;
     animation-name: fade_in;
-    animation-duration: .5s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-delay: .15s;
 }
@@ -29,13 +31,13 @@ h1.main_heading {
 
 /* Standard syntax */
 @keyframes fly_from_bottom {
-  from {bottom: -100vh;}
-  to {bottom: 0;}
+  from {top: -100vh;}
+  to {top: 0;}
 }
 
 /* Standard syntax */
 @keyframes fly_from_top {
-  from {top: -100vh;}
+  from {top: 100vh;}
   to {top: 0;}
 }
 
