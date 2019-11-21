@@ -57,7 +57,7 @@ body.projects nav #home_link{
     animation-delay: 2.5s;
 }
 
-h1{
+body.projects h1{
     animation-name: fade_out_then_in;
     animation-duration: 2.5s;
     animation-fill-mode: forwards;
