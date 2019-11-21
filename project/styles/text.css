@@ -1,14 +1,21 @@
-h1{
+h1 {
     position: absolute;
     z-index: 1;
     font-size: 60px;
     line-height: 1;
     text-transform: uppercase;
-    font-family: arial;
+    font-family: Impact, Charcoal, sans-serif;
     background: transparent;
     top: calc(50% - 30px);
 }
 
-p{
+p {
     margin: 0 0 25px;
+    font-size: 20px;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.hello {
+    color: dodgerblue;
+    font-size: 25px;
 }
