@@ -71,6 +71,12 @@ body.projects h1{
   animation-delay: .25s;
 }
 
+a {
+  transition-property: color;
+  transition-duration: .5s;
+  transition-timing-function: linear;
+}
+
 
 @keyframes right_to_left {
   from {right: -100vw;}
