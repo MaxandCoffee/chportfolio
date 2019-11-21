@@ -9,6 +9,7 @@ button{
     font-weight: bolder;
     border: none;
     position: relative;
+    cursor: pointer;
 }
 button span{
     position: absolute;

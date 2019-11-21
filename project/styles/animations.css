@@ -1,0 +1,46 @@
+
+.aside_triangle__top {
+    animation-name: fly_from_top;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.aside_triangle__bottom {
+    animation-name: fly_from_bottom;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+section.about_me {
+    animation-name: fade_in;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-delay: .25s;
+}
+
+h1.main_heading {
+    animation-name: fade_in;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-delay: .15s;
+}
+
+
+
+/* Standard syntax */
+@keyframes fly_from_bottom {
+  from {bottom: -100vh;}
+  to {bottom: 0;}
+}
+
+/* Standard syntax */
+@keyframes fly_from_top {
+  from {top: -100vh;}
+  to {top: 0;}
+}
+
+/* Standard syntax */
+@keyframes fade_in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

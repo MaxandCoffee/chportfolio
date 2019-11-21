@@ -3,11 +3,11 @@
     margin: 0;
     padding: 0;
 }
-aside{
+aside {
     position: relative;
     max-width: 50vw;
 }
-.aside_triangle__top{
+.aside_triangle__top {
     top: 0;
     width: 0;
     height: 0;
@@ -15,7 +15,7 @@ aside{
     border-width: 100vh 50vw 0 0;
     border-color: lightcoral transparent transparent transparent;
 }
-.aside_triangle__bottom{
+.aside_triangle__bottom {
     position: absolute;
     top: 0;
     width: 0;
@@ -24,7 +24,7 @@ aside{
     border-width: 100vh 0 0 50vw;
     border-color: transparent transparent transparent #2FB5A8;
 }
-main{
+main {
     width: 50vw;
     height: 100vh;
     position: absolute;
@@ -32,7 +32,7 @@ main{
     right: 0;
     text-align: center;
 }
-section{
+section {
     width: 60%;
     position: relative;
     /* left: 15%; */
@@ -40,9 +40,9 @@ section{
     text-align: justify;
     display: inline-block;
 }
-.button_wrapper{
+.button_wrapper {
     text-align: center;
 }
-button{
+button {
     display: inline-block;
 }
