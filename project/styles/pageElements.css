@@ -9,22 +9,22 @@ a[href='#kcManager'] + .colorDot{
     background: violet;
 }
 
-a[href=#viewDoLabs] + .colorDot{
+a[href='#viewDoLabs'] + .colorDot{
     background: orange;
 }
 
-a[href=#beaconInteractiveSys] + .colorDot{
+a[href='#beaconInteractiveSys'] + .colorDot{
     background: hotpink;
 }
 
-a[href=#vistaprintCS] + .colorDot{
+a[href='#vistaprintCS'] + .colorDot{
     background: lightseagreen;
 }
 
-a[href=#adventInternat] + .colorDot{
+a[href='#adventInternat'] + .colorDot{
     background: indigo;
 }
 
-a[href=#vistaprint] + .colorDot{
+a[href='#vistaprint'] + .colorDot{
     background: purple;
 }
