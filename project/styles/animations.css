@@ -18,16 +18,16 @@ section.about_me {
     animation-name: fade_in;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    animation-delay: .25s;
+    animation-delay: 1s;
 }
 
-h1.main_heading {
+/* h1.main_heading {
     opacity: 0;
     animation-name: fade_in;
-    animation-duration: 1s;
+    animation-duration: .5s;
     animation-fill-mode: forwards;
-    animation-delay: .15s;
-}
+    animation-delay: 1s;
+} */
 
 
 
