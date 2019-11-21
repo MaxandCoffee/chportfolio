@@ -72,14 +72,13 @@ body.projects h1{
 }
 
 a {
-  transition: color, right;
+  transition: color, transform;
   transition-duration: .25s, .5s;
   transition-timing-function: linear;
 }
 
 li a:hover{
-  position: relative;
-  right: 3vw;
+  transform: translate(3vw, 0);
 }
 
 
