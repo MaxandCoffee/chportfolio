@@ -6,12 +6,12 @@ const projectsButton = document.getElementById('projectsButton'),
 function addListeners() {
     projectsButton.addEventListener('click', function () {
         initProjects();
-        home_link.classList.add('to_top');
     });
 }
 
 function initProjects() {
     body[0].classList.add('projects');
+    body[0].classList.remove('home');
     about_me.classList.add('fadeout');
 }
 
