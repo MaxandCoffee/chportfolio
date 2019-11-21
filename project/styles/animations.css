@@ -72,9 +72,13 @@ body.projects h1{
 }
 
 a {
-  transition-property: color;
-  transition-duration: .5s;
+  transition: color, margin;
+  transition-duration: .25s, .5s;
   transition-timing-function: linear;
+}
+
+li a:hover{
+  margin-right: 3vw;
 }
 
 
