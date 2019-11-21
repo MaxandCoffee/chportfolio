@@ -2,10 +2,10 @@ aside{
     position: absolute;
     left: 0;
     width: 100vh;
+}
 
-    .aside_wrapper{
-        background-color: grey;
-        height: 100%;
-        width: 50vw;
-    }
+.aside_wrapper{
+    background-color: grey;
+    height: 100%;
+    width: 50vw;
 }
