@@ -25,7 +25,7 @@ function initProjects() {
 
     let timeout = 0;
 
-    for (let i = 0; i > project_li.length; i++) {
+    for (let i = 0; i < project_li.length; i++) {
         project_li[i].style.display = "block";
         timeout += 250;
 
