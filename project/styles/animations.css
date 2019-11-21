@@ -50,7 +50,7 @@ body.projects .aside_triangle__bottom {
     border-color: transparent transparent transparent dodgerblue;
 }
 
-body.projects .top_nav #home_link{
+body.projects nav #home_link{
   animation-name: fade_in;
     animation-duration: 2.5s;
     animation-fill-mode: forwards;
