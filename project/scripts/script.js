@@ -16,7 +16,7 @@ function initProjects() {
     about_me.classList.add('fadeout');
     setTimeout(function () {
         main_heading.innerHTML = 'My Projects';;
-    }, 550);
+    }, 1750);
 
 }
 
