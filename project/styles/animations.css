@@ -53,8 +53,11 @@ body.projects .aside_triangle__bottom {
 #home_link.to_top{
     top: 0;
     left: 0;
-    opacity: 0;
     font-size: 20px;
+    transition-property: all;
+    transition-duration: .1s;
+    transition-timing-function: linear;
+    transition-delay: .5s;
     letter-spacing: 2px;
     transform: translate(20px, 15px);
     animation-name: fade_out_then_in;
