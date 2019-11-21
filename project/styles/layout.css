@@ -67,6 +67,6 @@ nav #home_link{
 }
 section#projects li {
     position: relative;
-    right: -100%;
+    right: -50vw;
     display: none;
 }

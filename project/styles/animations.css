@@ -107,7 +107,7 @@ body.projects h1{
 }
 
 @keyframes flyin_right {
-  0% {right: -100%;}
-  50% {right: 20%;}
+  0% {right: -50vw;}
+  50% {right: 10vw;}
   100% {right: 0;}
 }
