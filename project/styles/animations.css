@@ -68,7 +68,7 @@ body.projects h1{
   animation-name: flyin_right;
   animation-duration: .75s;
   animation-fill-mode: forwards;
-  animation-delay: 1s;
+  animation-delay: .25s;
 }
 
 
