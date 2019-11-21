@@ -1,6 +1,6 @@
 button{
     display: inline-block;
-    background: #2FB5A8;
+    background: dodgerblue;
     width: 240px;
     height: 45px;
     color: white;
@@ -11,16 +11,15 @@ button{
     position: relative;
 }
 button::after{
-    content: '';
+    content: 'View My Projects';
     position: absolute;
     top: 0;
     left: 0;
-    width: 0;
-    height:100%;
-    display: block;
-    background: dodgerblue;
+    width: 240px;
+    height: 45px;
+    background: #2FB5A8;
     transition: all .5s linear 1s;
 }
 button:hover::after{
-    width: 100%;
+    width: 0;
 }
