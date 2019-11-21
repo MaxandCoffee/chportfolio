@@ -10,8 +10,15 @@ button{
     border: none;
     position: relative;
 }
+button span{
+    position: absolute;
+    top: 0;
+    width: 240px;
+    height: 45px;
+    z-index: 1;
+}
 button::after{
-    content: 'View My Projects';
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
