@@ -3,7 +3,8 @@ const projectsButton = document.getElementById('projectsButton'),
     home_link = document.getElementById('home_link'),
     about_me = document.getElementById('about_me'),
     projects = document.getElementById('projects'),
-    main_heading = document.getElementById('main_heading');
+    main_heading = document.getElementById('main_heading'),
+    project_li = document.querySelectorAll('#projects li');
 
 function addListeners() {
     projectsButton.addEventListener('click', function () {
@@ -22,7 +23,12 @@ function initProjects() {
         about_me.style.display = "none";
     }, 500);
     projects.style.display = "inline-block";
-    projects.classList.add('flyin_right');
+
+    for (i in project_li) {
+        setTimeout(function () {
+            project_li[i].classList.add('flyin_right');
+        }, 250);
+    }
 
 }
 
