@@ -25,7 +25,7 @@ function initProjects() {
 
     for (let i in project_li) {
         setTimeout(function () {
-            project_li[i].style.display = "inline-block";
+            project_li[i].style.display = "block";
             project_li[i].classList.add('flyin_right');
         }, 250);
     }
