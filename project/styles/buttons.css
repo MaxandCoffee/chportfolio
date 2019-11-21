@@ -8,3 +8,14 @@ button{
     font-weight: bolder;
     border: none;
 }
+button::after{
+    content: '';
+    width: 0;
+    height:100%;
+    display: block;
+    background: dodgerblue;
+    transition: all 2s linear 1s;
+}
+button:hover::after{
+    width: 100%;
+}
