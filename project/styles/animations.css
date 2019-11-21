@@ -98,6 +98,8 @@ body.projects .aside_triangle__bottom {
 
 @keyframes fade_out_then_in {
   0% {opacity: 1;}
+  25% {opacity: 0;}
   50% {opacity: 0;}
-  1000% {opacity: 1;}
+  75% {opacity: 0;}
+  100% {opacity: 1;}
 }
