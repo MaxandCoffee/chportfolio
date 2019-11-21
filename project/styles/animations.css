@@ -50,6 +50,18 @@ body.projects .aside_triangle__bottom {
     border-color: transparent transparent transparent dodgerblue;
 }
 
+#home_link.to_top{
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    letter-spacing: 2px;
+    transform: translate(20px, 15px);
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    transition-delay: .5s;
+}
+
 
 /* h1.main_heading {
     opacity: 0;
