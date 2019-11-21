@@ -1,3 +1,6 @@
+*{
+    font-family: Tahoma, Geneva, sans-serif;
+}
 h1 {
     transform: translate(-50%, 0);
     position: absolute;
