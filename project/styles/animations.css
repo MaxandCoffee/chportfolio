@@ -22,7 +22,10 @@ section.about_me {
 }
 
 body.projects section.about_me{
-    display: none;
+    animation-name: fade_out;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+    animation-delay: .25s;
 }
 
 body.projects .overlay {
@@ -35,14 +38,14 @@ body.projects .aside_triangle__top {
     transition-property: border-color;
     transition-duration: .75s;
     transition-timing-function: linear;
-    transition-delay: 1s;
+    transition-delay: .5s;
     border-color: #2FB5A8 transparent transparent transparent;
 }
 body.projects .aside_triangle__bottom {
     transition-property: border-color;
     transition-duration: .5s;
     transition-timing-function: linear;
-    transition-delay: 1s;
+    transition-delay: .5s;
     border-color: transparent transparent transparent dodgerblue;
 }
 
@@ -55,26 +58,32 @@ body.projects .aside_triangle__bottom {
     animation-delay: 1s;
 } */
 
-/* Standard syntax */
+
 @keyframes right_to_left {
   from {right: -100vw;}
   to {right: 100vw;}
 }
 
-/* Standard syntax */
 @keyframes fly_from_bottom {
   from {transform: translate(0, 100vh);}
   to {transform: translate(0, 0);}
 }
 
-/* Standard syntax */
 @keyframes fly_from_top {
   from {transform: translate(0, -100vh);}
   to {transform: translate(0, 0);}
 }
 
-/* Standard syntax */
 @keyframes fade_in {
   from {opacity: 0;}
   to {opacity: 1;}
+}
+
+
+@keyframes fade_out {
+  from {opacity: 1;}
+  to {
+      opacity: 0;
+      display: none;
+    }
 }
