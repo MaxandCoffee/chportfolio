@@ -1,19 +1,19 @@
 
-.aside_triangle__top {
+.home .aside_triangle__top {
     transform: translate(0, -100vh);
     animation-name: fly_from_top;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 
-.aside_triangle__bottom {
+.home .aside_triangle__bottom {
     transform: translate(0, -100vh);
     animation-name: fly_from_bottom;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 
-section.about_me {
+.home section.about_me {
     opacity: 0;
     animation-name: fade_in;
     animation-duration: 1s;
@@ -53,13 +53,10 @@ body.projects .aside_triangle__bottom {
 #home_link.to_top{
     top: 0;
     left: 0;
+    opacity: 0;
     font-size: 20px;
     letter-spacing: 2px;
     transform: translate(20px, 15px);
-    /* transition-property: all;
-    transition-duration: .5s;
-    transition-timing-function: linear;
-    transition-delay: 1s; */
     animation-name: fade_out_then_in;
     animation-duration: 2.5s;
     animation-fill-mode: forwards;

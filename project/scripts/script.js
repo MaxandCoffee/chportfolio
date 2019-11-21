@@ -1,13 +1,16 @@
+const projectsButton = document.getElementById('projectsButton'),
+      body = document.getElementsByTagName('body'),
+      home_link = document.getElementById('home_link');
 
 function addListeners() {
-    const projectsButton = document.getElementById('projectsButton');
-    const body = document.getElementsByTagName('body');
-    const home_link = document.getElementById('home_link');
-
     projectsButton.addEventListener('click', function () {
-        body[0].classList.add('projects');
+        initProjects();
         home_link.classList.add('to_top');
     });
+}
+
+function initProjects() {
+    body[0].classList.add('projects');
 }
 
 
