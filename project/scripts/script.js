@@ -4,7 +4,7 @@ function addListeners() {
     const body = document.getElementsByTagName('body');
 
     projectsButton.addEventListener('click', function () {
-        body.classList.add('projects');
+        body[0].classList.add('projects');
     });
 }
 
