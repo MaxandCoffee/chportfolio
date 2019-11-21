@@ -23,7 +23,7 @@ p {
 }
 section#projects li {
     font-family: Impact, Charcoal, sans-serif;
-    padding: 3vh;
+    padding: 3vh 0;
     font-size: 26px;
     list-style: none;
     text-align: left;
