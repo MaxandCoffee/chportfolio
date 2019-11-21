@@ -5,12 +5,15 @@
 }
 aside{
     position: relative;
+}
+.aside_triangle__bottom{
+    position: relative;
     width: 50vw;
     height: 100vh;
     background: lightcoral;
     opacity: .6;
 }
-.aside_triangle{
+.aside_triangle__bottom{
     width: 0;
     height: 0;
     border-style: solid;
