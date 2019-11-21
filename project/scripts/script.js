@@ -14,7 +14,7 @@ function addListeners() {
 
 function initProjects() {
     body[0].classList.add('projects');
-    body[0].classList.remove('home');
+    body[0].classList.add('animate');
     about_me.classList.add('fadeout');
     setTimeout(function () {
         main_heading.innerHTML = 'My Projects';
@@ -33,6 +33,8 @@ function initProjects() {
             project_li[i].classList.add('flyin_right');
         }, timeout);
     }
+
+    body[0].classList.remove('animate');
 
 }
 
