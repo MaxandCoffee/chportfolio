@@ -56,10 +56,10 @@ body.projects .aside_triangle__bottom {
     font-size: 20px;
     letter-spacing: 2px;
     transform: translate(20px, 15px);
-    transition-property: all;
+    /* transition-property: all;
     transition-duration: .5s;
     transition-timing-function: linear;
-    transition-delay: 1s;
+    transition-delay: 1s; */
     animation-name: fade_out_then_in;
     animation-duration: 2.5s;
     animation-fill-mode: forwards;
