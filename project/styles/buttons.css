@@ -1,15 +1,20 @@
 button{
     display: inline-block;
     background: #2FB5A8;
-    padding: 10px 20px;
+    width: 180px;
+    height: 45px;
     color: white;
     font-size: 20px;
     text-transform: uppercase;
     font-weight: bolder;
     border: none;
+    position: relative;
 }
 button::after{
     content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 0;
     height:100%;
     display: block;
