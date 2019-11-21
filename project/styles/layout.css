@@ -35,7 +35,8 @@ main {
 section {
     width: 60%;
     position: relative;
-    padding: 7% 0;
+    top: 50%;
+    transform: translate(0, -50%);
     text-align: justify;
     display: inline-block;
 }
