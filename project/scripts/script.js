@@ -14,7 +14,10 @@ function initProjects() {
     body[0].classList.add('projects');
     body[0].classList.remove('home');
     about_me.classList.add('fadeout');
-    main_heading.innerHTML = 'My Projects';
+    setTimeout(function () {
+        main_heading.innerHTML = 'My Projects';;
+    }, 550);
+
 }
 
 
