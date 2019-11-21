@@ -16,7 +16,8 @@ function initProjects() {
     body[0].classList.remove('home');
     about_me.classList.add('fadeout');
     setTimeout(function () {
-        main_heading.innerHTML = 'My Projects';;
+        main_heading.innerHTML = 'My Projects';
+        about_me.style.display = "none";
     }, 1750);
     projects.classList.add('flyin_right');
 }
