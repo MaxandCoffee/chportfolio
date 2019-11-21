@@ -23,11 +23,16 @@ function initProjects() {
         about_me.style.display = "none";
     }, 500);
 
+    let timeout = 0;
+
     for (let i in project_li) {
+
+        timeout += 250;
+
         setTimeout(function () {
             project_li[i].style.display = "block";
             project_li[i].classList.add('flyin_right');
-        }, 250);
+        }, timeout);
     }
 
 }
