@@ -1,5 +1,6 @@
 const body = document.getElementsByTagName('body'),
     home_link = document.getElementById('home_link'),
+    projectsButton = document.getElementById('projectsButton'),
     about_me = document.getElementById('about_me'),
     projects = document.getElementById('projects'),
     projectContainer = document.getElementById('projectContainer'),
@@ -17,10 +18,12 @@ const project = [
 
 function addListeners() {
 
+    projectsButton.addEventListener('click', function (e) {
+        initProjects();
+    });
+
     window.addEventListener('click', function (e) {
-        if (e.target.id === 'projectsButton') {
-            initProjects();
-        } else if (e.target.hash) {
+        if (e.target.hash) {
             initProjectView(e.target.hash);
         };
 
