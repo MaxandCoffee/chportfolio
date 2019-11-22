@@ -61,7 +61,10 @@ function initProjectView(hash) {
     const elmId = hash.substr(1);
     const eml = document.getElementById(elmId);
     const dot = eml.nextSibling;
-    const arr = projectsObj[elmId]
+
+    if (!projects.classList.contains('fadeout')) {
+        projects.classList.add('fadeout');
+    }
 
     animateOverlay(getOverlayColor(dot));
 
