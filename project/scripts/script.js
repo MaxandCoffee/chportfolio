@@ -104,7 +104,7 @@ function getNext(key) {
         index = 0;
     }
 
-    return items[keys[index]];
+    return projectsObj[keys[index]];
 }
 
 function initNextButton(elmId) {
