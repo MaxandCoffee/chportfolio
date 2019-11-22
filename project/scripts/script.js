@@ -87,7 +87,7 @@ function animageTriangles(color) {
         newBottomColor = color;
 
     topTriangle.style.borderColor = newTopColor + 'transparent transparent transparent';
-    bottomTriangle.style.borderColor = 'transparent transparent transparent' + newBottomColor;
+    bottomTriangle.style.borderColor = 'transparent transparent' + newBottomColor;
 }
 
 function generateTemplate(arr) {
