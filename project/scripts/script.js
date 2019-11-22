@@ -27,17 +27,17 @@ const projectsObj = {
     },
     "vistaprintCS": {
         content: 'I was the Lead Engineer for a system which helped revolutionize the U.S. Navy\'s shipboard logging process. The system I led development on not only allows decision-makers to view near real-time ship analytics, but it also empowers them to act more agilely when it comes to decisions on energy consumption and management. Before this solution, the U.S. Navy maintained manual paper logging on all ships.',
-        heading: 'Beacon Interactive Systems',
+        heading: 'Vistaprint Corporate Solutions',
         image: 'project/images/beacon.png'
     },
     "adventInternat": {
         content: 'I was the Lead Engineer for a system which helped revolutionize the U.S. Navy\'s shipboard logging process. The system I led development on not only allows decision-makers to view near real-time ship analytics, but it also empowers them to act more agilely when it comes to decisions on energy consumption and management. Before this solution, the U.S. Navy maintained manual paper logging on all ships.',
-        heading: 'Beacon Interactive Systems',
+        heading: 'Advent International',
         image: 'project/images/beacon.png'
     },
     "vistaprint": {
         content: 'I was the Lead Engineer for a system which helped revolutionize the U.S. Navy\'s shipboard logging process. The system I led development on not only allows decision-makers to view near real-time ship analytics, but it also empowers them to act more agilely when it comes to decisions on energy consumption and management. Before this solution, the U.S. Navy maintained manual paper logging on all ships.',
-        heading: 'Beacon Interactive Systems',
+        heading: 'Vistaprint',
         image: 'project/images/beacon.png'
     }
 }
