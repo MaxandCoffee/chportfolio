@@ -48,6 +48,9 @@ function animateOverlay(color) {
         overlay.style.background = color;
     }
     body[0].classList.add('animate');
+}
+
+function resetOverlay() {
     body[0].classList.remove('animate');
 }
 
@@ -66,6 +69,7 @@ function setMainHeading(heading) {
         main_heading.innerHTML = heading;
     }, 1750);
 }
+
 
 
 function initProjects() {
@@ -90,7 +94,7 @@ function initProjects() {
             project_li[i].classList.add('flyin_right');
         }, timeout);
     }
-
+    resetOverlay();
 }
 
 function init() {
