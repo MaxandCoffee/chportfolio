@@ -6,7 +6,7 @@ const body = document.getElementsByTagName('body'),
     projectContainer = document.getElementById('projectContainer'),
     main_heading = document.getElementById('main_heading'),
     project_li = document.querySelectorAll('#projects li'),
-    overlay = document.querySelector('overlay');
+    overlay = document.querySelector('.overlay');
 
 //Project Templates
 const project = [
