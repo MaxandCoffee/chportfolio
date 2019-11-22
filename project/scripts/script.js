@@ -61,7 +61,6 @@ function initProjects() {
     animateOverlay();
     about_me.classList.add('fadeout');
 
-    updateProjectInfo(projects);
     setMainHeading('My Projects');
 
     setTimeout(function () {
