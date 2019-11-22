@@ -20,9 +20,17 @@ function addListeners() {
     window.addEventListener('click', function (e) {
         if (e.target.id = 'projectsButton') {
             initProjects();
-        } else if (e.target.hash);
+        } else if (e.target.hash) {
+            initProjectView(e.target.hash);
+        };
 
     });
+}
+
+function initProjectView(hash) {
+    const eml = document.getElementById(hash);
+    const dot = eml.nextSibling;
+    animateOverlay(getOverlayColor(dot);)
 }
 
 function generateTemplate(project) {
