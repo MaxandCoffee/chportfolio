@@ -93,7 +93,6 @@ function initProjects() {
             project_li[i].classList.add('flyin_right');
         }, timeout);
     }
-    resetOverlay();
 }
 
 function init() {
