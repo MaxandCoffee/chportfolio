@@ -32,25 +32,24 @@ const projectsObj = {
         content: 'I was the Lead Engineer for a system which helped revolutionize the U.S. Navy\'s shipboard logging process. The system I led development on not only allows decision-makers to view near real-time ship analytics, but it also empowers them to act more agilely when it comes to decisions on energy consumption and management. Before this solution, the U.S. Navy maintained manual paper logging on all ships.',
         heading: 'Vistaprint Corporate Solutions',
         image: 'project/images/beacon.png',
-        headingClass: 'default'
+        headingClass: 'small'
     },
     "adventInternat": {
         content: 'I was the Lead Engineer for a system which helped revolutionize the U.S. Navy\'s shipboard logging process. The system I led development on not only allows decision-makers to view near real-time ship analytics, but it also empowers them to act more agilely when it comes to decisions on energy consumption and management. Before this solution, the U.S. Navy maintained manual paper logging on all ships.',
         heading: 'Advent International',
         image: 'project/images/beacon.png',
-        headingClass: 'default'
+        headingClass: 'small'
     },
     "vistaprint": {
         content: 'I was the Lead Engineer for a system which helped revolutionize the U.S. Navy\'s shipboard logging process. The system I led development on not only allows decision-makers to view near real-time ship analytics, but it also empowers them to act more agilely when it comes to decisions on energy consumption and management. Before this solution, the U.S. Navy maintained manual paper logging on all ships.',
         heading: 'Vistaprint',
         image: 'project/images/beacon.png',
-        headingClass: 'small'
+        headingClass: 'default'
     }
 }
 
 
 function addListeners() {
-
     projectsButton.addEventListener('click', function (e) {
         initProjects();
     });
@@ -72,11 +71,23 @@ function initProjectView(hash) {
         projects.classList.add('fadeout');
     }
 
-    animateOverlay(getOverlayColor(dot));
+    animateOverlay(getNewColor(dot));
+
+    animageTriangles(getNewColor(dot));
 
     updateProjectInfo(generateTemplate(projectsObj[elmId]));
 
     setMainHeading(projectsObj[elmId].heading, projectsObj[elmId].headingClass)
+}
+
+function animageTriangles(color) {
+    const topTriangle = document.querySelector('.aside_triangle__top'),
+        bottomTriangle = document.querySelector('.aside_triangle__bottom'),
+        newBottomColor = window.getComputedStyle('.aside_triangle__bottom').getPropertyValue('border-left-color'),
+        newTopColor = color;
+
+    topTriangle.style.borderColor = newTopColor + 'transparent transparent transparent';
+    bottomTriangle.style.borderColor = 'transparent transparent transparent' + newBottomColor;
 }
 
 function generateTemplate(arr) {
@@ -97,7 +108,7 @@ function animateOverlay(color) {
     }, 0);
 }
 
-function getOverlayColor(dot) {
+function getNewColor(dot) {
     return window.getComputedStyle(dot).getPropertyValue('background-color');
 }
 
@@ -110,7 +121,9 @@ function updateProjectInfo(template) {
 function setMainHeading(heading, size) {
     setTimeout(function () {
         main_heading.innerHTML = heading;
-        main_heading.classList.add(size);
+        if (size) {
+            main_heading.classList.add(size);
+        }
     }, 1750);
 }
 
