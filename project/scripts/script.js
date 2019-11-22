@@ -47,11 +47,10 @@ function animateOverlay(color) {
     if (color && overlay) {
         overlay.style.background = color;
     }
+    if (body[0].classList.contains('animate')) {
+        body[0].classList.remove('animate');
+    }
     body[0].classList.add('animate');
-}
-
-function resetOverlay() {
-    body[0].classList.remove('animate');
 }
 
 function getOverlayColor(dot) {
