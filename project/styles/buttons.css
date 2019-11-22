@@ -51,7 +51,7 @@
     left: 0;
     width: 240px;
     height: 60px;
-    backgrond-color: #2FB5A8;
+    background-color: #2FB5A8;
     transition: width .25s linear;
 }
 #nextButton:hover::after{
