@@ -64,6 +64,7 @@ svg {
     position: absolute;
     top: -1px;
     left: 0;
+    z-index: 1;
   }
   svg text {
     text-anchor: middle;
