@@ -65,9 +65,9 @@ function initProjectView(hash) {
 
     animateOverlay(getOverlayColor(dot));
 
-    updateProjectInfo(generateTemplate(projectsArr[hash]));
+    updateProjectInfo(generateTemplate(projectsArr[elmId]));
 
-    setMainHeading(projectsArr[hash].heading)
+    setMainHeading(projectsArr[elmId].heading)
 }
 
 function generateTemplate(arr) {
