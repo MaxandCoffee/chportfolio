@@ -20,7 +20,7 @@ function addListeners() {
     window.addEventListener('click', function (e) {
         if (e.target.id = 'projectsButton') {
             initProjects();
-        } else if (e.target.hash = );
+        } else if (e.target.hash);
 
     });
 }
