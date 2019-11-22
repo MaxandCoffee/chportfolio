@@ -17,7 +17,7 @@ const project = [
 
 function addListeners() {
 
-    document.addEventListener('click', function (e) {
+    window.addEventListener('click', function (e) {
         if (e.target.id = 'projectsButton') {
             initProjects();
         } else if (e.target);
