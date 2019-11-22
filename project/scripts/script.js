@@ -18,7 +18,7 @@ const project = [
 function addListeners() {
 
     window.addEventListener('click', function (e) {
-        if (e.target.id = 'projectsButton') {
+        if (e.target.id === 'projectsButton') {
             initProjects();
         } else if (e.target.hash) {
             initProjectView(e.target.hash);
