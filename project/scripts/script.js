@@ -28,7 +28,8 @@ function addListeners() {
 }
 
 function initProjectView(hash) {
-    const eml = document.querySelector(hash);
+    const elmId = hash.substr(1);
+    const eml = document.getElementById(elmId);
     const dot = eml.nextSibling;
     animateOverlay(getOverlayColor(dot));
 }
