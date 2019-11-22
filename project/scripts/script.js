@@ -1,6 +1,7 @@
 const body = document.getElementsByTagName('body'),
     home_link = document.getElementById('home_link'),
     projectsButton = document.getElementById('projectsButton'),
+    nextButton = document.getElementById('nextButton'),
     about_me = document.getElementById('about_me'),
     projects = document.getElementById('projects'),
     projectContainer = document.getElementById('projectContainer'),
@@ -50,7 +51,11 @@ const projectsObj = {
 
 
 function addListeners() {
-    projectsButton.addEventListener('click', function (e) {
+    projectsButton.addEventListener('click', function () {
+        initNextButton();
+    });
+
+    nextButton.addEventListener('click', function () {
         initProjects();
     });
 
@@ -58,11 +63,18 @@ function addListeners() {
         if (e.target.hash) {
             initProjectView(e.target.hash);
         };
-
     });
 }
 
-function initProjectView(hash) {
+function initProjectView(hash, id) {
+    let elmId;
+
+    if (hash) {
+         elmId = hash.substr(1);
+    } else {
+        elmId = id;
+    }
+
     const elmId = hash.substr(1);
     const eml = document.getElementById(elmId);
     const dot = eml.nextSibling;
@@ -71,13 +83,35 @@ function initProjectView(hash) {
         projects.classList.add('fadeout');
     }
 
+    initNextButton(elmId);
+
     animateOverlay(getNewColor(dot));
 
     animageTriangles(getNewColor(dot));
 
     updateProjectInfo(generateTemplate(projectsObj[elmId]));
 
-    setMainHeading(projectsObj[elmId].heading, projectsObj[elmId].headingClass)
+    setMainHeading(projectsObj[elmId].heading, projectsObj[elmId].headingClass);
+}
+
+function getNext(key) {
+    var keys = Object.keys(projectsObj).sort();
+    var index = keys.indexOf(key);
+
+
+    if ((index > 0) && (index < keys.length - 1)) {
+        index = index + 1;
+    } else if (index === keys.length - 1) {
+        index = 0;
+    }
+
+    return items[keys[index]];
+}
+
+function initNextButton(elmId) {
+    const nextProject = getNext(elmId);
+
+    initProjectView(null, nextProject);
 }
 
 function animageTriangles(color) {

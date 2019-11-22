@@ -37,7 +37,7 @@
     display: inline-block;
     width: 240px;
     height: 60px;
-    background-color: black;
+    background-color: dodgerblue;
     text-transform: uppercase;
     font-weight: bolder;
     border: none;
@@ -51,7 +51,7 @@
     left: 0;
     width: 240px;
     height: 60px;
-    background-color: #2FB5A8;
+    background-color: black;
     transition: width .25s linear;
 }
 #nextButton:hover::after{
