@@ -66,8 +66,13 @@ nav #home_link{
     letter-spacing: 2px;
     transform: translate(20px, 15px);
 }
+
+section#projects {
+    position: relative;
+}
+
 section#projects li {
     position: relative;
     right: -50vw;
-    visibilty: hidden;
+    display: none;
 }
