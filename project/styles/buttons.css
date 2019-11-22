@@ -80,3 +80,9 @@ svg {
     fill: white;
     mask: url(#mask);
   }
+  .button_wrapper__next{
+      display: none;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+  }
