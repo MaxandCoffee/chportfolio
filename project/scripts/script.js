@@ -75,7 +75,6 @@ function initProjectView(hash, id) {
         elmId = id;
     }
 
-    const elmId = hash.substr(1);
     const eml = document.getElementById(elmId);
     const dot = eml.nextSibling;
 
