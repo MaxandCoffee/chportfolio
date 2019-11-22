@@ -62,6 +62,7 @@ function initProjectView(hash) {
     const elmId = hash.substr(1);
     const eml = document.getElementById(elmId);
     const dot = eml.nextSibling;
+    const arr = projectsArr[elmId];
 
     animateOverlay(getOverlayColor(dot));
 
