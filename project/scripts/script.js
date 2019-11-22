@@ -83,8 +83,8 @@ function initProjectView(hash) {
 function animageTriangles(color) {
     const topTriangle = document.querySelector('.aside_triangle__top'),
         bottomTriangle = document.querySelector('.aside_triangle__bottom'),
-        newBottomColor = color,
-        newTopColor = window.getComputedStyle(bottomTriangle).getPropertyValue('border-left-color');
+        newTopColor = window.getComputedStyle(bottomTriangle).getPropertyValue('border-left-color'),
+        newBottomColor = color;
 
     topTriangle.style.borderColor = newTopColor + 'transparent transparent transparent';
     bottomTriangle.style.borderColor = 'transparent transparent transparent' + newBottomColor;
