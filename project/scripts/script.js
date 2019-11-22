@@ -30,7 +30,7 @@ function addListeners() {
 function initProjectView(hash) {
     const eml = document.getElementById(hash);
     const dot = eml.nextSibling;
-    animateOverlay(getOverlayColor(dot);)
+    animateOverlay(getOverlayColor(dot));
 }
 
 function generateTemplate(project) {
