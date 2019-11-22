@@ -59,7 +59,7 @@ function setMainHeading(heading) {
 
 function initProjects() {
     body[0].classList.add('projects');
-    animateOverlay(color);
+    animateOverlay();
     about_me.classList.add('fadeout');
 
     // template content and heading
