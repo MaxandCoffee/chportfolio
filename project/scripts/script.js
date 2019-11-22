@@ -39,8 +39,8 @@ function animateOverlay(color) {
     body[0].classList.remove('animate');
 }
 
-function getOverlayColor(elm) {
-    return elm.style.color;
+function getOverlayColor(dot) {
+    return window.getComputedStyle(dot).getPropertyValue('background-color');
 }
 
 function updateProjectInfo(template) {
