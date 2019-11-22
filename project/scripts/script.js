@@ -11,10 +11,38 @@ const body = document.getElementsByTagName('body'),
 //Project Templates
 const project = [
     {
-        content: 'I was the Lead Engineer for a system which helped revolutionize the U.S. Navy\'s shipboard logging process. The system I led development on not only allows decision-makers to view near real-time ship analytics, but it also empowers them to act more agilely when it comes to decisions on energy consumption and management. Before this solution, the U.S. Navy maintained manual paper logging on all ships.' },
-        { heading: 'Beacon Interactive Systems' },
-        { image: '../images/beacon.png' }
-    ]
+        kcManager: [
+            { content: 'I was the Lead Engineer for a system which helped revolutionize the U.S. Navy\'s shipboard logging process. The system I led development on not only allows decision-makers to view near real-time ship analytics, but it also empowers them to act more agilely when it comes to decisions on energy consumption and management. Before this solution, the U.S. Navy maintained manual paper logging on all ships.' },
+            { heading: 'KC Manager' },
+            { image: '../images/beacon.png' }
+        ],
+        viewDoLabs: [
+            { content: 'I was the Lead Engineer for a system which helped revolutionize the U.S. Navy\'s shipboard logging process. The system I led development on not only allows decision-makers to view near real-time ship analytics, but it also empowers them to act more agilely when it comes to decisions on energy consumption and management. Before this solution, the U.S. Navy maintained manual paper logging on all ships.' },
+            { heading: 'ViewDo Labs' },
+            { image: '../images/beacon.png' }
+        ],
+        beaconInteractiveSys: [
+            { content: 'I was the Lead Engineer for a system which helped revolutionize the U.S. Navy\'s shipboard logging process. The system I led development on not only allows decision-makers to view near real-time ship analytics, but it also empowers them to act more agilely when it comes to decisions on energy consumption and management. Before this solution, the U.S. Navy maintained manual paper logging on all ships.' },
+            { heading: 'Beacon Interactive Systems' },
+            { image: '../images/beacon.png' }
+        ],
+        vistaprintCS: [
+            { content: 'I was the Lead Engineer for a system which helped revolutionize the U.S. Navy\'s shipboard logging process. The system I led development on not only allows decision-makers to view near real-time ship analytics, but it also empowers them to act more agilely when it comes to decisions on energy consumption and management. Before this solution, the U.S. Navy maintained manual paper logging on all ships.' },
+            { heading: 'Vistaprint Corporate Solutions' },
+            { image: '../images/beacon.png' }
+        ],
+        adventInternat: [
+            { content: 'I was the Lead Engineer for a system which helped revolutionize the U.S. Navy\'s shipboard logging process. The system I led development on not only allows decision-makers to view near real-time ship analytics, but it also empowers them to act more agilely when it comes to decisions on energy consumption and management. Before this solution, the U.S. Navy maintained manual paper logging on all ships.' },
+            { heading: 'Advent International' },
+            { image: '../images/beacon.png' }
+        ],
+        vistaprint: [
+            { content: 'I was the Lead Engineer for a system which helped revolutionize the U.S. Navy\'s shipboard logging process. The system I led development on not only allows decision-makers to view near real-time ship analytics, but it also empowers them to act more agilely when it comes to decisions on energy consumption and management. Before this solution, the U.S. Navy maintained manual paper logging on all ships.' },
+            { heading: 'Vistaprint' },
+            { image: '../images/beacon.png' }
+        ],
+    }
+]
 
 function addListeners() {
 
@@ -34,7 +62,12 @@ function initProjectView(hash) {
     const elmId = hash.substr(1);
     const eml = document.getElementById(elmId);
     const dot = eml.nextSibling;
+
     animateOverlay(getOverlayColor(dot));
+
+    updateProjectInfo(generateTemplate(project[hash]));
+
+    setMainHeading(project[hash].heading)
 }
 
 function generateTemplate(project) {
