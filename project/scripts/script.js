@@ -20,7 +20,7 @@ function addListeners() {
     window.addEventListener('click', function (e) {
         if (e.target.id = 'projectsButton') {
             initProjects();
-        } else if (e.target);
+        } else if (e.target.hash = );
 
     });
 }
@@ -45,9 +45,8 @@ function getOverlayColor(dot) {
 
 function updateProjectInfo(template) {
     setTimeout(function () {
-        projectContainer.innerHTML = template.content;
+        projectContainer.innerHTML = template;
     }, 500);
-    setMainHeading(template.heading);
 }
 
 function setMainHeading(heading) {
@@ -62,7 +61,8 @@ function initProjects() {
     animateOverlay();
     about_me.classList.add('fadeout');
 
-    // template content and heading
+    updateProjectInfo(projects);
+    setMainHeading('My Projects');
 
     setTimeout(function () {
         about_me.style.display = "none";
@@ -81,9 +81,6 @@ function initProjects() {
     }
 
 }
-
-
-
 
 function init() {
     switch (window.location.hash) {
