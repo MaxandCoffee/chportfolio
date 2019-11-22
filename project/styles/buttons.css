@@ -59,7 +59,11 @@
 }
 svg {
     width: 240px;
-    height: 60px;
+    height: 61px;
+    line-height: 60px;
+    position: absolute;
+    top: -1px;
+    left: 0;
   }
   svg text {
     text-anchor: middle;
