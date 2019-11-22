@@ -77,3 +77,6 @@ section#projects li {
 img{
     width: 30%;
 }
+.heading_wrapper {
+    width: 50vw;
+}
