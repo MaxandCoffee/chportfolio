@@ -9,7 +9,7 @@ const body = document.getElementsByTagName('body'),
     overlay = document.querySelector('.overlay');
 
 //Project Templates
-const project = [
+const projectsArr = [
     {
         kcManager: [
             { content: 'I was the Lead Engineer for a system which helped revolutionize the U.S. Navy\'s shipboard logging process. The system I led development on not only allows decision-makers to view near real-time ship analytics, but it also empowers them to act more agilely when it comes to decisions on energy consumption and management. Before this solution, the U.S. Navy maintained manual paper logging on all ships.' },
@@ -65,13 +65,13 @@ function initProjectView(hash) {
 
     animateOverlay(getOverlayColor(dot));
 
-    updateProjectInfo(generateTemplate(project[hash]));
+    updateProjectInfo(generateTemplate(projectsArr[hash]));
 
-    setMainHeading(project[hash].heading)
+    setMainHeading(projectsArr[hash].heading)
 }
 
-function generateTemplate(project) {
-    const template = '<p>' + project.content + '</p> <img aria-hidden="true" alt="Project Image" src="' + project.image + '">';
+function generateTemplate(arr) {
+    const template = '<p>' + arr.content + '</p> <img aria-hidden="true" alt="Project Image" src="' + arr.image + '">';
 
     return template;
 }
