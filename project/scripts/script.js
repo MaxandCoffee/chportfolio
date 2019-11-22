@@ -48,12 +48,11 @@ function animateOverlay(color) {
         overlay.style.background = color;
     }
     if (body[0].classList.contains('animate')) {
-        setTimeout(function () {
-            body[0].classList.remove('animate');
-        }, 0);
-
+        body[0].classList.remove('animate');
     }
-    body[0].classList.add('animate');
+    setTimeout(function () {
+        body[0].classList.add('animate');
+    }, 0);
 }
 
 function getOverlayColor(dot) {
