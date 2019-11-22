@@ -78,7 +78,7 @@ a {
 }
 
 li a:hover{
-  transform: translate(3vw, 0);
+  transform: translate(-3vw, 0);
 }
 
 
