@@ -69,5 +69,5 @@ nav #home_link{
 section#projects li {
     position: relative;
     right: -50vw;
-    display: none;
+    visibilty: hidden;
 }

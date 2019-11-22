@@ -88,7 +88,7 @@ function initProjects() {
 
     //animates project list
     for (let i = 0; i < project_li.length; i++) {
-        project_li[i].style.display = "block";
+        project_li[i].style.visibility = "visible";
         timeout += 250;
 
         setTimeout(function () {
