@@ -207,6 +207,7 @@ function initProjects() {
 
     setTimeout(function () {
         about_me.style.display = "none";
+        projects.style.display = "inline-block";
     }, 500);
 
     let timeout = 0;
