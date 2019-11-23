@@ -249,6 +249,8 @@ window.onhashchange = function () {
 
     if (isInternal === 'false' && (hash !== '#home') && (hash !== '#projects')) {
         initProjectView(hash);
+    } else if (hash === '#projects') {
+        initProjects();
     } else if ((hash === '#home')) {
         location.reload();
     }
