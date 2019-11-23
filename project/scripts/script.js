@@ -165,8 +165,9 @@ function animateOverlay(color) {
     }, 0);
 }
 
-function getNewColor(dot) {
-    return window.getComputedStyle(dot).getPropertyValue('background-color');
+function getNewColor(dotElm) {
+    const newColor = window.getComputedStyle(dotElm).getPropertyValue('background-color');
+    return newColor;
 }
 
 function updateProjectInfo(template) {
