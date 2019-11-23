@@ -56,7 +56,7 @@ function addListeners() {
     });
 
     nextButton.addEventListener('click', function () {
-        initNextButton(e.target.hash);
+        initNextButton(window.location.hash);
     });
 
     window.addEventListener('click', function (e) {
@@ -107,7 +107,7 @@ function initNextButton(hash) {
     const nextProject = getNext(elmId);
     const color = window.getComputedStyle(nextButton).getPropertyValue('border-left-color');
 
-    initNewProjectView(nextProject, color);
+    initNewProjectView(nextProject, color, hash);
     setNextButtonColor(elmId);
 }
 
@@ -118,7 +118,8 @@ function setNextButtonColor(id) {
     nextButton.style.background = getNewColor(nextProjectDot);
 };
 
-function initNewProjectView(nextProject, dot) {
+function initNewProjectView(nextProject, dot, hash) {
+    window.location.hash = hash;
     animateOverlay(dot);
     animateTriangles(dot);
     updateProjectInfo(generateTemplate(nextProject));
