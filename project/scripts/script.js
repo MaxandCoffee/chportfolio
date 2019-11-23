@@ -103,9 +103,10 @@ function getNext(key) {
 function initNextButton(elmId) {
     const nextProject = getNext(elmId);
     const color = window.getComputedStyle(nextButton).getPropertyValue('border-left-color');
+
     initNewProjectView(nextProject, color);
     setNextButtonColor(elmId);
-    nextButton.display = 'block';
+    nextButton.style.display = 'block';
 }
 
 function setNextButtonColor(id) {
