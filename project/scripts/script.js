@@ -143,7 +143,7 @@ function animateTriangles(color) {
         newBottomColor = color;
 
     topTriangle.style.borderColor = newTopColor + 'transparent transparent transparent';
-    bottomTriangle.style.borderLeftColor = newBottomColor;
+    bottomTriangle.style.borderColor = 'transparent transparent transparent' + newBottomColor;
 }
 
 function generateTemplate(arr) {
