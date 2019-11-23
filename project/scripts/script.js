@@ -117,7 +117,10 @@ function setNextButtonColor(elm) {
 };
 
 function getNextProject(project) {
-    return project.parentElement.nextElementSibling.children[0];
+    if (project.parentElement.nextElementSibling.length >= 0) {
+        return project.parentElement.nextElementSibling.children[0];
+    }
+    return project.parentElement.parentElement.firstElementChild.children[0];
 }
 
 function initNewProjectView(nextProject, dot, hash) {
