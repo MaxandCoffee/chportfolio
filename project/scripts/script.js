@@ -56,7 +56,7 @@ function addListeners() {
     });
 
     nextButton.addEventListener('click', function () {
-        initNextButton(window.location.hash);
+        initNextButton(location.hash);
     });
 
     window.addEventListener('click', function (e) {
@@ -75,7 +75,7 @@ function initProjectView(hash) {
         projects.classList.add('fadeout');
     }
 
-    setNextButtonColor(dot);
+    setNextButtonColor(eml);
 
     animateOverlay(getNewColor(dot));
 
@@ -110,21 +110,23 @@ function initNextButton(hash) {
     initNewProjectView(nextProject, color, hash);
 }
 
-function setNextButtonColor(dot) {
-     nextButton.style.background = getNewColor(dot);
+function setNextButtonColor(elm) {
+    const nextProjectElm = elm.parentElement.nextElementSibling.children[0];
+    const nextProjectDot = nextProjectElm.nextElementSibling;
+
+    nextButton.style.background = getNewColor(nextProjectDot);
 };
 
 function initNewProjectView(nextProject, dot, hash) {
     const id = hash.substr(1);
     const currentProject = document.getElementById(id);
-    const nextProjectElm = currentProject.parentElement.nextElementSibling.children[0];
-    const nextProjectDot = nextProjectElm.nextElementSibling;
-    window.location.hash = hash;
+
+    location.hash = hash;
     animateOverlay(dot);
     animateTriangles(dot);
     updateProjectInfo(generateTemplate(nextProject));
     setMainHeading(nextProject.heading, nextProject.headingClass);
-    setNextButtonColor(nextProjectDot);
+    setNextButtonColor(currentProject);
 }
 
 function animateTriangles(color) {
@@ -201,7 +203,7 @@ function initProjects() {
 }
 
 function init() {
-    switch (window.location.hash) {
+    switch (location.hash) {
         case '#projects':
             initProjects();
           break;
