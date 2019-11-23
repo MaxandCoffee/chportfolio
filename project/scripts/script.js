@@ -82,7 +82,7 @@ function initProjectView(hash, id) {
         projects.classList.add('fadeout');
     }
 
-    initNextButton(elmId);
+    //initNextButton(elmId);
 
     animateOverlay(getNewColor(dot));
 
