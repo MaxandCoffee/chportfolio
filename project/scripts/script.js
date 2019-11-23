@@ -49,19 +49,21 @@ const projectsObj = {
     }
 }
 
-
 function addListeners() {
     projectsButton.addEventListener('click', function () {
         initProjects();
+        localStorage.setItem('internalButton', true);
     });
 
     nextButton.addEventListener('click', function () {
         initNextButton(location.hash);
+        localStorage.setItem('internalButton', true);
     });
 
     window.addEventListener('click', function (e) {
         if (e.target.hash) {
             initProjectView(e.target.hash);
+            localStorage.setItem('internalButton', true);
         };
     });
 }
@@ -74,6 +76,8 @@ function initProjectView(hash) {
     if (!projects.classList.contains('fadeout')) {
         projects.classList.add('fadeout');
     }
+
+    body[0].classList.add('project_view');
 
     setNextButtonColor(getNextProject(eml));
 
@@ -185,10 +189,9 @@ function setMainHeading(heading, size) {
     }, 1750);
 }
 
-
-
 function initProjects() {
     body[0].classList.add('projects');
+    body[0].classList.remove('home');
     animateOverlay();
     about_me.classList.add('fadeout');
 
@@ -202,7 +205,7 @@ function initProjects() {
 
     //animates project list
     for (let i = 0; i < project_li.length; i++) {
-        project_li[i].style.display = "block";
+        project_li[i].style.display = "inline-block";
         timeout += 250;
 
         setTimeout(function () {
@@ -219,5 +222,17 @@ function init() {
     }
     addListeners();
 }
+
+window.onhashchange(function () {
+    const isInternal = localStorage.getItem('internalButton'),
+        hash = location.hash;
+
+    if (!isInternal && (hash !== '#home' || hash !== '#projects')) {
+        initProjectView(hash);
+    } else if (hash === '#home' || hash === '#projects') {
+        location.reload();
+    }
+    localStorage.setItem('internalButton', false);
+});
 
 init();
