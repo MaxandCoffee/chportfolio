@@ -51,12 +51,12 @@ const projectsObj = {
 }
 
 function addListeners() {
-    projectsButton.addEventListener('click', function (e) {
+    projectsButton.addEventListener('click', function () {
         initProjects();
         localStorage.setItem('internalButton', 'true');
     });
 
-    nextButton.addEventListener('click', function (e) {
+    nextButton.addEventListener('click', function () {
         initNextButton(location.hash);
         localStorage.setItem('internalButton', 'true');
     });
@@ -68,10 +68,11 @@ function addListeners() {
 
     window.addEventListener('click', function (e) {
         if (e.target.hash) {
-            if (e.target.hash !== "#projects" && (e.target.hash !== "#home"))
-            initProjectView(e.target.hash);
-            localStorage.setItem('internalButton', 'true');
-        };
+            if (e.target.hash !== "#projects" && (e.target.hash !== "#home")) {
+                initProjectView(e.target.hash);
+                localStorage.setItem('internalButton', 'true');
+            }
+        }
     });
 }
 
