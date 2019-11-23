@@ -112,8 +112,9 @@ function initNextButton(hash) {
 
 function setNextButtonColor(elm) {
     const nextProjectDot = elm.nextElementSibling;
+    const newColor = getNewColor(nextProjectDot);
 
-    nextButton.style.background = getNewColor(nextProjectDot);
+    nextButton.style.background = newColor;
 };
 
 function getNextProject(project) {
