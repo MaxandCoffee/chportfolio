@@ -218,7 +218,10 @@ function init() {
     switch (location.hash) {
         case '#projects':
             initProjects();
-          break;
+            break;
+        default:
+            initProjectView(location.hash)();
+            break;
     }
     addListeners();
 }
@@ -227,7 +230,7 @@ window.onhashchange = function () {
     const isInternal = localStorage.getItem('internalButton'),
         hash = location.hash;
 
-    if (!isInternal && (hash !== '#home' || hash !== '#projects')) {
+    if (!isInternal && hash !== '#home' && hash !== '#projects') {
         initProjectView(hash);
     } else if (hash === '#home' || hash === '#projects') {
         location.reload();
