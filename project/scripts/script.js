@@ -212,6 +212,7 @@ function initProjects() {
 
     setTimeout(function () {
         about_me.style.display = "none";
+        projectContainer.style.display = "none";
         projects.style.display = "inline-block";
     }, 500);
 
@@ -248,7 +249,7 @@ window.onhashchange = function () {
 
     if (isInternal === 'false' && (hash !== '#home') && (hash !== '#projects')) {
         initProjectView(hash);
-    } else if ((hash === '#home') || (hash === '#projects')) {
+    } else if ((hash === '#home')) {
         location.reload();
     }
     localStorage.setItem('internalButton', 'false');
