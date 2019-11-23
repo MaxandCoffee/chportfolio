@@ -75,9 +75,12 @@ function initProjectView(hash) {
 
     if (!projects.classList.contains('fadeout')) {
         projects.classList.add('fadeout');
+    }else if (!body[0].classList.contains('projects')) {
+        projects.classList.add('projects');
     }
 
     body[0].classList.add('project_view');
+    about_me.style.display = "none";
 
     setNextButtonColor(getNextProject(eml));
 
@@ -215,16 +218,16 @@ function initProjects() {
 }
 
 function init() {
-    // switch (location.hash) {
-    //     case '#projects':
-    //         initProjects();
-    //         break;
-    //     case '#home':
-    //         break;
-    //     default:
-    //         initProjectView(location.hash);
-    //         break;
-    // }
+    switch (location.hash) {
+        case '#projects':
+            initProjects();
+            break;
+        case '#home':
+            break;
+        default:
+            initProjectView(location.hash);
+            break;
+    }
     addListeners();
 }
 
