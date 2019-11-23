@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
 }
+body {
+    height: 100vh;
+    overflow: hidden;
+}
 aside {
     max-width: 50vw;
     position:relative;
@@ -34,7 +38,7 @@ main {
 }
 section {
     width: 60%;
-    position: absolute;
+    position: relative;
     top: 50%;
     transform: translate(0, -50%);
     text-align: justify;
@@ -61,6 +65,9 @@ nav {
     top: 0;
     padding: 15px 20px;
 }
+/* section#projects {
+    position: absolute;
+} */
 section#projects li {
     position: relative;
     right: -50vw;
