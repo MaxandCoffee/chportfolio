@@ -52,11 +52,11 @@ const projectsObj = {
 
 function addListeners() {
     projectsButton.addEventListener('click', function () {
-        initNextButton();
+        initProjects();
     });
 
     nextButton.addEventListener('click', function () {
-        initProjects();
+        initNextButton();
     });
 
     window.addEventListener('click', function (e) {
