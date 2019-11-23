@@ -109,7 +109,7 @@ function initNextButton(elmId) {
 
 function setNextButtonColor(id) {
     const currentProject = document.getElementById(id);
-    const nextProjectDot = currentProject.parentElement.nextElementSibling.lastChild;
+    const nextProjectDot = currentProject.parentElement.nextElementSibling.children[1];
 
     nextButton.style.background = getNewColor(nextProjectDot);
 };
