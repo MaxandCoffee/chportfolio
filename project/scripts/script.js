@@ -75,7 +75,7 @@ function initProjectView(hash) {
         projects.classList.add('fadeout');
     }
 
-    setNextButtonColor(elmId);
+    setNextButtonColor(dot);
 
     animateOverlay(getNewColor(dot));
 
