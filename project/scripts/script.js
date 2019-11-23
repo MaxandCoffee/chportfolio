@@ -232,7 +232,7 @@ window.onhashchange = function () {
     const isInternal = localStorage.getItem('internalButton'),
         hash = location.hash;
 
-    if (!isInternal && (hash !== '#home') && (hash !== '#projects')) {
+    if (isInternal === 'false' && (hash !== '#home') && (hash !== '#projects')) {
         initProjectView(hash);
     } else if (hash === '#home' || hash === '#projects') {
         location.reload();
