@@ -6,7 +6,7 @@
 aside {
     max-width: 50vw;
     position:relative;
-    z-index: 2;
+    z-index: 3;
 }
 .aside_triangle__top {
     width: 0;
@@ -53,11 +53,11 @@ section {
     position: absolute;
     top: 0;
     right: -100vw;
-    z-index: 1;
+    z-index: 2;
 }
 nav {
     position: absolute;
-    z-index: 3;
+    z-index: 4;
     top: 0;
     padding: 15px 20px;
 }
