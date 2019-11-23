@@ -75,7 +75,8 @@ function initProjectView(hash) {
 
     if (!projects.classList.contains('fadeout')) {
         projects.classList.add('fadeout');
-    }else if (!body[0].classList.contains('projects')) {
+    }
+    if (!body[0].classList.contains('projects')) {
         body[0].classList.add('projects');
     }
 
