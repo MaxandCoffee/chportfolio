@@ -129,12 +129,12 @@ function initNewProjectView(nextProject, dot, hash) {
     const currentProject = document.getElementById(id);
     const nextProjectElm = getNextProject(currentProject);
 
-    location.hash = '#' + nextProjectElm.id;
     animateOverlay(dot);
     animateTriangles(dot);
     updateProjectInfo(generateTemplate(nextProject));
     setMainHeading(nextProject.heading, nextProject.headingClass);
     setNextButtonColor(nextProjectElm);
+    location.hash = '#' + nextProjectElm.id;
 }
 
 function animateTriangles(color) {
