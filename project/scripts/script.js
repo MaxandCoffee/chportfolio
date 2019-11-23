@@ -56,7 +56,7 @@ function addListeners() {
     });
 
     nextButton.addEventListener('click', function () {
-        initNextButton();
+        initNextButton(e.target.hash);
     });
 
     window.addEventListener('click', function (e) {
@@ -102,7 +102,8 @@ function getNext(key) {
     return projectsObj[keys[index]];
 }
 
-function initNextButton(elmId) {
+function initNextButton(hash) {
+    const elmId = hash.substr(1);
     const nextProject = getNext(elmId);
     const color = window.getComputedStyle(nextButton).getPropertyValue('border-left-color');
 
