@@ -84,6 +84,8 @@ function initProjectView(hash) {
     updateProjectInfo(generateTemplate(projectsObj[elmId]));
 
     setMainHeading(projectsObj[elmId].heading, projectsObj[elmId].headingClass);
+
+    nextButton.parentElement.style.display = 'block';
 }
 
 function getNext(key) {
@@ -106,7 +108,6 @@ function initNextButton(elmId) {
 
     initNewProjectView(nextProject, color);
     setNextButtonColor(elmId);
-    nextButton.parentElement.style.display = 'block';
 }
 
 function setNextButtonColor(id) {
