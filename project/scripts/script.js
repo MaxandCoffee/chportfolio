@@ -83,6 +83,11 @@ function initProjectView(hash) {
         body[0].classList.add('projects');
     }
 
+    setTimeout(function () {
+        projects.style.display = "none";
+        projectContainer.style.display = "inline-block";
+    }, 500);
+
     body[0].classList.add('project_view');
     about_me.style.display = "none";
     projects.style.display = "none";
