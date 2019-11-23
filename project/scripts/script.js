@@ -93,7 +93,7 @@ function getNext(key) {
     var index = keys.indexOf(key);
 
 
-    if ((index > 0) && (index < keys.length - 1)) {
+    if ((index >= 0) && (index < keys.length - 1)) {
         index = index + 1;
     } else if (index === keys.length - 1) {
         index = 0;
