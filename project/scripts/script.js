@@ -215,16 +215,16 @@ function initProjects() {
 }
 
 function init() {
-    switch (location.hash) {
-        case '#projects':
-            initProjects();
-            break;
-        case '#home':
-            break;
-        default:
-            initProjectView(location.hash);
-            break;
-    }
+    // switch (location.hash) {
+    //     case '#projects':
+    //         initProjects();
+    //         break;
+    //     case '#home':
+    //         break;
+    //     default:
+    //         initProjectView(location.hash);
+    //         break;
+    // }
     addListeners();
 }
 
