@@ -108,23 +108,23 @@ function initNextButton(hash) {
     const color = window.getComputedStyle(nextButton).getPropertyValue('background');
 
     initNewProjectView(nextProject, color, hash);
-    setNextButtonColor(elmId);
 }
 
-function setNextButtonColor(id) {
-     nextButton.style.background = getNewColor(nextProjectDot);
+function setNextButtonColor(dot) {
+     nextButton.style.background = getNewColor(dot);
 };
 
 function initNewProjectView(nextProject, dot, hash) {
     const id = hash.substr(1);
     const currentProject = document.getElementById(id);
-    const nextProject = currentProject.parentElement.nextElementSibling.children[1];
-    const nextProjectDot = currentProject.parentElement.nextElementSibling.children[1];
+    const nextProjectElm = currentProject.parentElement.nextElementSibling.children[0];
+    const nextProjectDot = nextProjectElm.nextElementSibling;
     window.location.hash = hash;
     animateOverlay(dot);
     animateTriangles(dot);
     updateProjectInfo(generateTemplate(nextProject));
     setMainHeading(nextProject.heading, nextProject.headingClass);
+    setNextButtonColor(nextProjectDot);
 }
 
 function animateTriangles(color) {
