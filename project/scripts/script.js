@@ -1,5 +1,6 @@
 const body = document.getElementsByTagName('body'),
     home_link = document.getElementById('home_link'),
+    projects_link = document.getElementById('projects_link')
     projectsButton = document.getElementById('projectsButton'),
     nextButton = document.getElementById('nextButton'),
     about_me = document.getElementById('about_me'),
@@ -57,6 +58,11 @@ function addListeners() {
 
     nextButton.addEventListener('click', function () {
         initNextButton(location.hash);
+        localStorage.setItem('internalButton', 'true');
+    });
+
+    projects_link.addEventListener('click', function () {
+        initProjects();
         localStorage.setItem('internalButton', 'true');
     });
 
@@ -239,7 +245,7 @@ window.onhashchange = function () {
 
     if (isInternal === 'false' && (hash !== '#home') && (hash !== '#projects')) {
         initProjectView(hash);
-    } else if (isInternal === 'false' && hash === '#projects') {
+    } else if (isInternal === 'false' && (hash === '#projects')) {
         initProjects();
     } else if (hash === '#home') {
         location.reload();
