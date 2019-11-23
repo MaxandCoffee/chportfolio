@@ -222,7 +222,7 @@ function init() {
         case '#home':
             break;
         default:
-            initProjectView(location.hash)();
+            initProjectView(location.hash);
             break;
     }
     addListeners();
