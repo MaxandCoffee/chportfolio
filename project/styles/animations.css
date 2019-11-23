@@ -27,6 +27,7 @@ section.fadeout{
     animation-duration: .25s;
     animation-fill-mode: forwards;
     animation-delay: .25s;
+    position: absolute;
 }
 
 body.animate .overlay {
