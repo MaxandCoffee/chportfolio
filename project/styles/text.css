@@ -3,7 +3,7 @@
 }
 h1 {
     position: relative;
-    z-index: 2;
+    z-index: 4;
     line-height: 1;
     font-size: calc(30px + 2.2vw);
     text-transform: uppercase;
