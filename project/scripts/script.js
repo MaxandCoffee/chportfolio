@@ -219,6 +219,8 @@ function init() {
         case '#projects':
             initProjects();
             break;
+        case '#home':
+            break;
         default:
             initProjectView(location.hash)();
             break;
