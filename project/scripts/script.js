@@ -239,7 +239,9 @@ window.onhashchange = function () {
 
     if (isInternal === 'false' && (hash !== '#home') && (hash !== '#projects')) {
         initProjectView(hash);
-    } else if (hash === '#home' || hash === '#projects') {
+    } else if (hash === '#projects') {
+        initProjects();
+    } else if (hash === '#home') {
         location.reload();
     }
     localStorage.setItem('internalButton', false);
