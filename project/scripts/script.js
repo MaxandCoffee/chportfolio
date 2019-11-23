@@ -61,11 +61,6 @@ function addListeners() {
         localStorage.setItem('internalButton', 'true');
     });
 
-    projects_link.addEventListener('click', function () {
-        initProjects();
-        localStorage.setItem('internalButton', 'true');
-    });
-
     window.addEventListener('click', function (e) {
         if (e.target.hash) {
             if (e.target.hash !== "#projects" && (e.target.hash !== "#home")) {
