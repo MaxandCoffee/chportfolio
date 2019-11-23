@@ -133,7 +133,7 @@ function initNewProjectView(nextProject, dot, hash) {
     animateTriangles(dot);
     updateProjectInfo(generateTemplate(nextProject));
     setMainHeading(nextProject.heading, nextProject.headingClass);
-    setNextButtonColor(nextProjectElm);
+    setNextButtonColor(getNextProject(nextProjectElm));
     location.hash = '#' + nextProjectElm.id;
 }
 
