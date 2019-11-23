@@ -75,7 +75,7 @@ function initProjectView(hash) {
         projects.classList.add('fadeout');
     }
 
-    setNextButtonColor(eml);
+    setNextButtonColor(getNextProject(eml));
 
     animateOverlay(getNewColor(dot));
 
@@ -116,17 +116,20 @@ function setNextButtonColor(elm) {
     nextButton.style.background = getNewColor(nextProjectDot);
 };
 
+function getNextProject(project) {
+    return project.parentElement.nextElementSibling.children[0];
+}
+
 function initNewProjectView(nextProject, dot, hash) {
     const id = hash.substr(1);
     const currentProject = document.getElementById(id);
-    const nextProjectElm = currentProject.parentElement.nextElementSibling.children[0];
 
     location.hash = '#' + nextProjectElm.id;
     animateOverlay(dot);
     animateTriangles(dot);
     updateProjectInfo(generateTemplate(nextProject));
     setMainHeading(nextProject.heading, nextProject.headingClass);
-    setNextButtonColor(nextProjectElm);
+    setNextButtonColor(getNextProject(currentProject));
 }
 
 function animateTriangles(color) {
