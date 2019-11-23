@@ -105,7 +105,7 @@ function getNext(key) {
 function initNextButton(hash) {
     const elmId = hash.substr(1);
     const nextProject = getNext(elmId);
-    const color = window.getComputedStyle(nextButton).getPropertyValue('background');
+    const color = window.getComputedStyle(nextButton).getPropertyValue('background-color');
 
     initNewProjectView(nextProject, color, hash);
 }
