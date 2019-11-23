@@ -223,7 +223,7 @@ function init() {
     addListeners();
 }
 
-window.onhashchange(function () {
+window.onhashchange = function () {
     const isInternal = localStorage.getItem('internalButton'),
         hash = location.hash;
 
@@ -233,6 +233,6 @@ window.onhashchange(function () {
         location.reload();
     }
     localStorage.setItem('internalButton', false);
-});
+};
 
 init();
