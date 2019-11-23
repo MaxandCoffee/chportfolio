@@ -105,6 +105,7 @@ function initNextButton(elmId) {
     const color = window.getComputedStyle(nextButton).getPropertyValue('border-left-color');
     initNewProjectView(nextProject, color);
     setNextButtonColor(elmId);
+    nextButton.display = 'block';
 }
 
 function setNextButtonColor(id) {
@@ -115,13 +116,9 @@ function setNextButtonColor(id) {
 };
 
 function initNewProjectView(nextProject, dot) {
-
     animateOverlay(dot);
-
     animateTriangles(dot);
-
     updateProjectInfo(generateTemplate(nextProject));
-
     setMainHeading(nextProject.heading, nextProject.headingClass);
 }
 
