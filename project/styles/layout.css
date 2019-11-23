@@ -61,9 +61,9 @@ nav {
     top: 0;
     padding: 15px 20px;
 }
-section#projects {
+/* section#projects {
     position: absolute;
-}
+} */
 section#projects li {
     position: relative;
     right: -50vw;
