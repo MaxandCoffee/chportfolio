@@ -89,7 +89,7 @@ function initProjectView(hash) {
 }
 
 function getNext(key) {
-    var keys = Object.keys(projectsObj).sort();
+    var keys = Object.keys(projectsObj);
     var index = keys.indexOf(key);
 
 
@@ -126,7 +126,7 @@ function getNextProject(project) {
 function initNewProjectView(nextProject, dot, hash) {
     const id = hash.substr(1);
     const currentProject = document.getElementById(id);
-    const nextProjectElm = getNextProject(currentProject)
+    const nextProjectElm = getNextProject(currentProject);
 
     location.hash = '#' + nextProjectElm.id;
     animateOverlay(dot);
