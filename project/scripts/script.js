@@ -111,8 +111,7 @@ function initNextButton(hash) {
 }
 
 function setNextButtonColor(elm) {
-    const nextProjectElm = elm.parentElement.nextElementSibling.children[0];
-    const nextProjectDot = nextProjectElm.nextElementSibling;
+    const nextProjectDot = elm.nextElementSibling;
 
     nextButton.style.background = getNewColor(nextProjectDot);
 };
@@ -120,13 +119,14 @@ function setNextButtonColor(elm) {
 function initNewProjectView(nextProject, dot, hash) {
     const id = hash.substr(1);
     const currentProject = document.getElementById(id);
+    const nextProjectElm = currentProject.parentElement.nextElementSibling.children[0];
 
-    location.hash = hash;
+    location.hash = '#' + nextProjectElm.id;
     animateOverlay(dot);
     animateTriangles(dot);
     updateProjectInfo(generateTemplate(nextProject));
     setMainHeading(nextProject.heading, nextProject.headingClass);
-    setNextButtonColor(currentProject);
+    setNextButtonColor(nextProjectElm);
 }
 
 function animateTriangles(color) {
