@@ -69,7 +69,7 @@ function addListeners() {
 function initProjectView(hash) {
     const elmId = hash.substr(1);
     const eml = document.getElementById(elmId);
-    const dot = eml.nextSibling;
+    const dot = eml.nextElementSibling;
 
     if (!projects.classList.contains('fadeout')) {
         projects.classList.add('fadeout');
@@ -105,20 +105,21 @@ function getNext(key) {
 function initNextButton(hash) {
     const elmId = hash.substr(1);
     const nextProject = getNext(elmId);
-    const color = window.getComputedStyle(nextButton).getPropertyValue('border-left-color');
+    const color = window.getComputedStyle(nextButton).getPropertyValue('background');
 
     initNewProjectView(nextProject, color, hash);
     setNextButtonColor(elmId);
 }
 
 function setNextButtonColor(id) {
-    const currentProject = document.getElementById(id);
-    const nextProjectDot = currentProject.parentElement.nextElementSibling.children[1];
-
-    nextButton.style.background = getNewColor(nextProjectDot);
+     nextButton.style.background = getNewColor(nextProjectDot);
 };
 
 function initNewProjectView(nextProject, dot, hash) {
+    const id = hash.substr(1);
+    const currentProject = document.getElementById(id);
+    const nextProject = currentProject.parentElement.nextElementSibling.children[1];
+    const nextProjectDot = currentProject.parentElement.nextElementSibling.children[1];
     window.location.hash = hash;
     animateOverlay(dot);
     animateTriangles(dot);
