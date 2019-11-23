@@ -52,18 +52,18 @@ const projectsObj = {
 function addListeners() {
     projectsButton.addEventListener('click', function () {
         initProjects();
-        localStorage.setItem('internalButton', true);
+        localStorage.setItem('internalButton', 'true');
     });
 
     nextButton.addEventListener('click', function () {
         initNextButton(location.hash);
-        localStorage.setItem('internalButton', true);
+        localStorage.setItem('internalButton', 'true');
     });
 
     window.addEventListener('click', function (e) {
         if (e.target.hash) {
             initProjectView(e.target.hash);
-            localStorage.setItem('internalButton', true);
+            localStorage.setItem('internalButton', 'true');
         };
     });
 }
@@ -239,12 +239,12 @@ window.onhashchange = function () {
 
     if (isInternal === 'false' && (hash !== '#home') && (hash !== '#projects')) {
         initProjectView(hash);
-    } else if (hash === '#projects') {
+    } else if (isInternal === 'false' && hash === '#projects') {
         initProjects();
     } else if (hash === '#home') {
         location.reload();
     }
-    localStorage.setItem('internalButton', false);
+    localStorage.setItem('internalButton', 'false');
 };
 
 init();
