@@ -51,12 +51,12 @@ const projectsObj = {
 }
 
 function addListeners() {
-    projectsButton.addEventListener('click', function () {
+    projectsButton.addEventListener('click', function (e) {
         initProjects();
         localStorage.setItem('internalButton', 'true');
     });
 
-    nextButton.addEventListener('click', function () {
+    nextButton.addEventListener('click', function (e) {
         initNextButton(location.hash);
         localStorage.setItem('internalButton', 'true');
     });
@@ -68,6 +68,7 @@ function addListeners() {
 
     window.addEventListener('click', function (e) {
         if (e.target.hash) {
+            if (e.target.hash !== "#projects" && (e.target.hash !== "#home"))
             initProjectView(e.target.hash);
             localStorage.setItem('internalButton', 'true');
         };
