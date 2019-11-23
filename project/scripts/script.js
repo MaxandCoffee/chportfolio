@@ -66,15 +66,8 @@ function addListeners() {
     });
 }
 
-function initProjectView(hash, id) {
-    let elmId;
-
-    if (hash) {
-         elmId = hash.substr(1);
-    } else {
-        elmId = id;
-    }
-
+function initProjectView(hash) {
+    const elmId = hash.substr(1);
     const eml = document.getElementById(elmId);
     const dot = eml.nextSibling;
 
@@ -82,11 +75,11 @@ function initProjectView(hash, id) {
         projects.classList.add('fadeout');
     }
 
-    //initNextButton(elmId);
+    setNextButtonColor(elmId);
 
     animateOverlay(getNewColor(dot));
 
-    animageTriangles(getNewColor(dot));
+    animateTriangles(getNewColor(dot));
 
     updateProjectInfo(generateTemplate(projectsObj[elmId]));
 
@@ -109,11 +102,30 @@ function getNext(key) {
 
 function initNextButton(elmId) {
     const nextProject = getNext(elmId);
-
-    initProjectView(null, nextProject);
+    const color = window.getComputedStyle(nextButton).getPropertyValue('border-left-color');
+    initNewProjectView(nextProject, color);
+    setNextButtonColor(elmId);
 }
 
-function animageTriangles(color) {
+function setNextButtonColor(id) {
+    const currentProject = document.getElementById(id);
+    const nextProjectDot = currentProject.parentElement.nextElementSibling.lastChild;
+
+    nextButton.style.background = getNewColor(nextProjectDot);
+};
+
+function initNewProjectView(nextProject, dot) {
+
+    animateOverlay(dot);
+
+    animateTriangles(dot);
+
+    updateProjectInfo(generateTemplate(nextProject));
+
+    setMainHeading(nextProject.heading, nextProject.headingClass);
+}
+
+function animateTriangles(color) {
     const topTriangle = document.querySelector('.aside_triangle__top'),
         bottomTriangle = document.querySelector('.aside_triangle__bottom'),
         newTopColor = window.getComputedStyle(bottomTriangle).getPropertyValue('border-left-color'),
