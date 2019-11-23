@@ -106,7 +106,7 @@ function initNextButton(elmId) {
 
     initNewProjectView(nextProject, color);
     setNextButtonColor(elmId);
-    nextButton.style.display = 'block';
+    nextButton.parentElement.style.display = 'block';
 }
 
 function setNextButtonColor(id) {
